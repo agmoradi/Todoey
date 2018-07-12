@@ -8,7 +8,9 @@
 
 import Foundation
 
-class Item {
+// Conforms to encodable, requires only standard datatypes
+//class Item: Encodable, Decodable {
+class Item: Codable {
     var title : String = ""
     var done : Bool = false
 }
